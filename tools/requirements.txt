@@ -1,0 +1,4 @@
+PySquashfsImage==0.9.0
+zstandard==0.25.0
+capstone==5.0.9
+pyelftools==0.33
