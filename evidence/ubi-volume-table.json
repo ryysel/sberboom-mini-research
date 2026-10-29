@@ -1,0 +1,30 @@
+{
+  "0": {
+    "name": "boot",
+    "reserved_pebs": 100,
+    "alignment": 1,
+    "type": 1,
+    "crc_ok": true
+  },
+  "1": {
+    "name": "system",
+    "reserved_pebs": 232,
+    "alignment": 1,
+    "type": 1,
+    "crc_ok": true
+  },
+  "2": {
+    "name": "cache",
+    "reserved_pebs": 372,
+    "alignment": 1,
+    "type": 1,
+    "crc_ok": true
+  },
+  "3": {
+    "name": "data",
+    "reserved_pebs": 158,
+    "alignment": 1,
+    "type": 1,
+    "crc_ok": true
+  }
+}

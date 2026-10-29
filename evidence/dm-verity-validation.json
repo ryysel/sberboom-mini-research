@@ -1,0 +1,12 @@
+{
+  "hash_type": 1,
+  "algorithm": "sha256",
+  "data_blocks": 5423,
+  "data_block_size": 4096,
+  "hash_block_size": 4096,
+  "salt_length": 32,
+  "leaf_count": 43,
+  "root_hash_matches": true,
+  "data_blocks_mismatched": 0,
+  "tree_blocks_mismatched": 0
+}

@@ -1,0 +1,38 @@
+{
+  "script_tests": [
+    {
+      "script": "inspect-boot.py",
+      "syntax": "pass",
+      "execution": "pass"
+    },
+    {
+      "script": "inspect.py",
+      "syntax": "pass",
+      "execution": "pass"
+    },
+    {
+      "script": "reverse.py",
+      "syntax": "pass",
+      "execution": "pass"
+    },
+    {
+      "script": "scan-dump.py",
+      "syntax": "pass",
+      "execution": "pass"
+    },
+    {
+      "script": "unpack.py",
+      "syntax": "pass",
+      "execution": "pass"
+    },
+    {
+      "script": "verify-verity.py",
+      "syntax": "pass",
+      "execution": "pass"
+    }
+  ],
+  "local_markdown_links": "pass",
+  "known_uart_identifiers_absent": "pass",
+  "forbidden_file_types_absent": "pass",
+  "note": "Automated checks supplement, not replace, human review. Firmware image is external to this package."
+}

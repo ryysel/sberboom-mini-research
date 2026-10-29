@@ -1,0 +1,14 @@
+{
+  "archive": {
+    "name": "s_23-04-25-20_sberboom_mini_dumpl.zip",
+    "bytes": 41394272,
+    "sha256": "35d9a93a5a2c4d97f0471c043a79bb6e3bd6b1b42919606e2c5a089fcee8daa6"
+  },
+  "image": {
+    "name": "boom_original.bin",
+    "bytes": 134217728,
+    "sha256": "dd6ea676f9c516eacb32a041195a39133dc4f2336edb21a5e9df686edd6e4fa5"
+  },
+  "raw_uart_capture_bytes": 8340,
+  "note": "Input firmware and raw UART are intentionally not distributed."
+}

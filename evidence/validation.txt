@@ -1,0 +1,26 @@
+FIT /images/kernel/data: SHA256 matches: True
+FIT /images/ramdisk/data: SHA256 matches: True
+FIT /images/radio1_a_p1/data: SHA256 matches: True
+FIT /images/radio1_a_evt2/data: SHA256 matches: True
+FIT /images/radio1_a_dvt/data: SHA256 matches: True
+FIT /images/radio1_a_pvt/data: SHA256 matches: True
+FIT /images/radio1_a_mp/data: SHA256 matches: True
+FIT timestamp: 2022-11-22T17:45:37+00:00
+Boot area 0x0 len 0x100000: sha256 9358d62f277c2fd45fc3c5b43b3fcfc5bbe2fed7ad67b4251cbf2a7d10b1673b
+Boot area 0x100000 len 0x100000: sha256 9358d62f277c2fd45fc3c5b43b3fcfc5bbe2fed7ad67b4251cbf2a7d10b1673b
+Boot area 0x800000 len 0x200000: sha256 bf4a85b4b823e49df021be3e348d9e2c7544acd49b10a7d334c27e5d55db66d4
+Boot area 0xa00000 len 0x200000: sha256 bf4a85b4b823e49df021be3e348d9e2c7544acd49b10a7d334c27e5d55db66d4
+Boot area 0xc00000 len 0x200000: sha256 bf4a85b4b823e49df021be3e348d9e2c7544acd49b10a7d334c27e5d55db66d4
+Boot area 0xe00000 len 0x200000: sha256 bf4a85b4b823e49df021be3e348d9e2c7544acd49b10a7d334c27e5d55db66d4
+Entropy 64 KiB at 0x0: 7.99722
+Entropy 64 KiB at 0x10000: 0.20403
+Entropy 64 KiB at 0x800000: 7.99707
+Entropy 64 KiB at 0x808000: 7.99712
+Entropy 64 KiB at 0x840000: 7.99725
+Marker b'AML': ['0x10000', '0x50000', '0x90000', '0xd0000', '0x110000', '0x150000', '0x190000', '0x1d0000', '0x1876f53', '0x1b6dbac', '0x1b6eaf8', '0x1b76b24', '0x1b77a70', '0x1b7fa98', '0x1b819e4', '0x1b89a0c', '0x1b8a958', '0x1b9297c', '0x1b938c8', '0x2584efd', '0x2bd12e0'] count=21
+Marker b'IFPG': ['0x10003', '0x50003', '0x90003', '0xd0003', '0x110003', '0x150003', '0x190003', '0x1d0003'] count=8
+Marker b'RABBIT': [] count=0
+Marker b'RABBITH': [] count=0
+Marker b'U-Boot': [] count=0
+Marker b'FIP': ['0x1e214cc'] count=1
+Kernel gzip at 0x6ef0, decompressed 15318644 bytes, versions=['Linux version 4.19.81 (jenkins@a899a47665e4) (gcc version 11.2.0 (Buildroot -g36f3a757)) #1 SMP PREEMPT Tue Nov 22 17:19:42 UTC 2022', 'Linux version %s (%s)']
