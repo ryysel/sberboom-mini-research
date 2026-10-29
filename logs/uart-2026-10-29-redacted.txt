@@ -1,0 +1,278 @@
+# UART capture, 2026-10-29; 115200 8N1; receive-only.
+# NUL bytes removed; newlines normalized; identifiers/challenges/calibration fields redacted.
+
+Board ID = 6
+vmininfo: [REDACTED]
+sve: [REDACTED]
+bl2_stage_init 0x01
+bl2_stage_init 0x81
+hw id: 0x0000 - powekey_id id 0x00
+bl2_stage_init 0xc0
+
+OTP MRK check...OK!
+
+L0: [REDACTED]
+L1: [REDACTED]
+L2: [REDACTED]
+L3: [REDACTED]
+
+TE: 45954
+
+BL2 Built : 22:12:33, Nov 22 2021. a1 gd74a75d - jenkins@walle02-sh
+
+Board ID = 6
+Switch cpu clk to oscin
+CPU clk: 1200 MHz
+SPI NAND init
+SPI-NAND: spi_nand_read_info page = 0x
+0000000000000020
+SNIP Vr: bl2 0x01 bl33 0x01
+ page_size 0x00000800
+ planes_per_lun 0x00000000
+SPI-NAND: read info page success
+storage init finish
+SPIFC_SEC_CTRL = 0x00000099
+OTP_ARB=1
+MVN_1=00000000
+MVN_2=00120000
+DDR driver_vesion: LPDDR4_PHY_V_0_1_23
+board id: 0
+ram type: ddr
+Load FIP HDR DDR from SPINAND, src: 0x00010000, des: 0xfff28000, size: 0x00004000, part: 0
+fw parse done
+PIEI prepare done
+Cfg max: 12, cur: 1. Board id: 255. Force loop cfg
+DDR3 probe
+
+ddr freq==768
+Check phy result
+INFO : End of initialization
+INFO : End of read enable training
+INFO : End of fine write leveling
+INFO : End of read dq deskew training
+INFO : End of MPR read delay center optimization
+INFO : End of Write leveling coarse delay
+INFO : End of write delay center optimization
+INFO : End of read delay center optimization
+INFO : End of max read latency training
+INFO : Training has run successfully!
+1D training succeed
+aml_ddr_fw_vesion: LPDDR4_PHY_V_0_1_21 build time: Dec 13 2019 16:15:28
+DDR cs0 size: 128MB
+DDR cs1 size: 0MB
+DMC_DDR_CTRL: 00000000DDR size: 128MB
+cs0 DataBus test pass
+cs0 AddrBus test pass
+
+
+100bdlr_step_size ps== 445
+result report
+boot times 0Enable ddr reg access
+rpmb not init until <register.h> have been fixed
+Load FIP HDR from SPINAND, src: 0x00010000, des: 0x00200000, size: 0x00004000, part: 0
+Load BL3X from SPINAND, src: 0x00048000, des: 0x00238000, size: 0x000fc000, part: 0
+boot bl31
+NOTICE:  BL31: v1.3(release):19693eb79
+NOTICE:  BL31: Built : 13:43:04, Sep  5 2022. a1 remotes/firmware/amlogic-dev-1.3 g19693eb79 - jenkins@walle02-sh
+BL31:tsensor calibration: [REDACTED]
+NOTICE:  BL31: A1 secure boot!
+NOTICE:  BL31: BL33 decompress pass
+INFO:    BL3-2: ATOS-V2.4.4-201-g4325e7aef #1 Tue Oct 11 18:46:50 2022 +0800 arm
+INFO:    BL3-2: Chip: A1 Rev: A (2C:A - 0:A)
+INFO:    BL3-2: crypto engine DMA
+INFO:    BL3-2: secure time TEE
+INFO:    BL3-2: CONFIG_DEVICE_SECURE 0xb200000e
+
+
+U-Boot 2019.01 (Apr 20 2026 - 21:09:53 +0000) [release], Build: jenkins-Firmware-Build-buildroot-23727
+
+DRAM:  128 MiB
+Relocation Offset is: 07eaa000
+Relocating to 07eaa000, new gd at 06ea75a0, sp at 06ea7590
+RABBIT HOLE v2 sberboom-mini [DEVICE_ID_REDACTED] [CHALLENGE_REDACTED]>
+RABBITH: timed out
+RABBIT HOLE LEVELS: none
+
+Board ID = 6
+vmininfo: [REDACTED]
+sve: [REDACTED]
+bl2_stage_init 0x01
+bl2_stage_init 0x81
+hw id: 0x0001 - powekey_id id 0x01
+bl2_stage_init 0xc1
+
+OTP MRK check...OK!
+
+L0: [REDACTED]
+L1: [REDACTED]
+L2: [REDACTED]
+L3: [REDACTED]
+
+TE: 46337
+
+BL2 Built : 22:12:33, Nov 22 2021. a1 gd74a75d - jenkins@walle02-sh
+
+Board ID = 6
+Switch cpu clk to oscin
+CPU clk: 1200 MHz
+SPI NAND init
+SPI-NAND: spi_nand_read_info page = 0x
+0000000000000020
+SNIP Vr: bl2 0x01 bl33 0x01
+ page_size 0x00000800
+ planes_per_lun 0x00000000
+SPI-NAND: read info page success
+storage init finish
+SPIFC_SEC_CTRL = 0x00000099
+OTP_ARB=1
+MVN_1=00000000
+MVN_2=00120000
+DDR driver_vesion: LPDDR4_PHY_V_0_1_23
+board id: 0
+ram type: ddr
+Load FIP HDR DDR from SPINAND, src: 0x00010000, des: 0xfff28000, size: 0x00004000, part: 0
+fw parse done
+PIEI prepare done
+Cfg max: 12, cur: 1. Board id: 255. Force loop cfg
+DDR3 probe
+
+ddr freq==768
+Check phy result
+INFO : End of initialization
+INFO : End of read enable training
+INFO : End of fine write leveling
+INFO : End of read dq deskew training
+INFO : End of MPR read delay center optimization
+INFO : End of Write leveling coarse delay
+INFO : End of write delay center optimization
+INFO : End of read delay center optimization
+INFO : End of max read latency training
+INFO : Training has run successfully!
+1D training succeed
+aml_ddr_fw_vesion: LPDDR4_PHY_V_0_1_21 build time: Dec 13 2019 16:15:28
+DDR cs0 size: 128MB
+DDR cs1 size: 0MB
+DMC_DDR_CTRL: 00000000DDR size: 128MB
+cs0 DataBus test pass
+cs0 AddrBus test pass
+
+
+100bdlr_step_size ps== 445
+result report
+boot times 0Enable ddr reg access
+rpmb not init until <register.h> have been fixed
+Load FIP HDR from SPINAND, src: 0x00010000, des: 0x00200000, size: 0x00004000, part: 0
+Load BL3X from SPINAND, src: 0x00048000, des: 0x00238000, size: 0x000fc000, part: 0
+boot bl31
+NOTICE:  BL31: v1.3(release):19693eb79
+NOTICE:  BL31: Built : 13:43:04, Sep  5 2022. a1 remotes/firmware/amlogic-dev-1.3 g19693eb79 - jenkins@walle02-sh
+BL31:tsensor calibration: [REDACTED]
+NOTICE:  BL31: A1 secure boot!
+NOTICE:  BL31: BL33 decompress pass
+INFO:    BL3-2: ATOS-V2.4.4-201-g4325e7aef #1 Tue Oct 11 18:46:50 2022 +0800 arm
+INFO:    BL3-2: Chip: A1 Rev: A (2C:A - 0:A)
+INFO:    BL3-2: crypto engine DMA
+INFO:    BL3-2: secure time TEE
+INFO:    BL3-2: CONFIG_DEVICE_SECURE 0xb200000e
+
+
+U-Boot 2019.01 (Apr 20 2026 - 21:09:53 +0000) [release], Build: jenkins-Firmware-Build-buildroot-23727
+
+DRAM:  128 MiB
+Relocation Offset is: 07eaa000
+Relocating to 07eaa000, new gd at 06ea75a0, sp at 06ea7590
+RABBIT HOLE v2 sberboom-mini [DEVICE_ID_REDACTED] [CHALLENGE_REDACTED]>
+RABBITH: timed out
+RABBIT HOLE LEVELS: none
+
+Board ID = 6
+vmininfo: [REDACTED]
+sve: [REDACTED]
+bl2_stage_init 0x01
+bl2_stage_init 0x81
+hw id: 0x0000 - powekey_id id 0x00
+bl2_stage_init 0xc0
+
+OTP MRK check...OK!
+
+L0: [REDACTED]
+L1: [REDACTED]
+L2: [REDACTED]
+L3: [REDACTED]
+
+TE: 46496
+
+BL2 Built : 22:12:33, Nov 22 2021. a1 gd74a75d - jenkins@walle02-sh
+
+Board ID = 6
+Switch cpu clk to oscin
+CPU clk: 1200 MHz
+SPI NAND init
+SPI-NAND: spi_nand_read_info page = 0x
+0000000000000020
+SNIP Vr: bl2 0x01 bl33 0x01
+ page_size 0x00000800
+ planes_per_lun 0x00000000
+SPI-NAND: read info page success
+storage init finish
+SPIFC_SEC_CTRL = 0x00000099
+OTP_ARB=1
+MVN_1=00000000
+MVN_2=00120000
+DDR driver_vesion: LPDDR4_PHY_V_0_1_23
+board id: 0
+ram type: ddr
+Load FIP HDR DDR from SPINAND, src: 0x00010000, des: 0xfff28000, size: 0x00004000, part: 0
+fw parse done
+PIEI prepare done
+Cfg max: 12, cur: 1. Board id: 255. Force loop cfg
+DDR3 probe
+
+ddr freq==768
+Check phy result
+INFO : End of initialization
+INFO : End of read enable training
+INFO : End of fine write leveling
+INFO : End of read dq deskew training
+INFO : End of MPR read delay center optimization
+INFO : End of Write leveling coarse delay
+INFO : End of write delay center optimization
+INFO : End of read delay center optimization
+INFO : End of max read latency training
+INFO : Training has run successfully!
+1D training succeed
+aml_ddr_fw_vesion: LPDDR4_PHY_V_0_1_21 build time: Dec 13 2019 16:15:28
+DDR cs0 size: 128MB
+DDR cs1 size: 0MB
+DMC_DDR_CTRL: 00000000DDR size: 128MB
+cs0 DataBus test pass
+cs0 AddrBus test pass
+
+
+100bdlr_step_size ps== 448
+result report
+boot times 1Enable ddr reg access
+rpmb not init until <register.h> have been fixed
+Load FIP HDR from SPINAND, src: 0x00010000, des: 0x00200000, size: 0x00004000, part: 0
+Load BL3X from SPINAND, src: 0x00048000, des: 0x00238000, size: 0x000fc000, part: 0
+boot bl31
+NOTICE:  BL31: v1.3(release):19693eb79
+NOTICE:  BL31: Built : 13:43:04, Sep  5 2022. a1 remotes/firmware/amlogic-dev-1.3 g19693eb79 - jenkins@walle02-sh
+BL31:tsensor calibration: [REDACTED]
+NOTICE:  BL31: A1 secure boot!
+NOTICE:  BL31: BL33 decompress pass
+INFO:    BL3-2: ATOS-V2.4.4-201-g4325e7aef #1 Tue Oct 11 18:46:50 2022 +0800 arm
+INFO:    BL3-2: Chip: A1 Rev: A (2C:A - 0:A)
+INFO:    BL3-2: crypto engine DMA
+INFO:    BL3-2: secure time TEE
+INFO:    BL3-2: CONFIG_DEVICE_SECURE 0xb200000e
+
+
+U-Boot 2019.01 (Apr 20 2026 - 21:09:53 +0000) [release], Build: jenkins-Firmware-Build-buildroot-23727
+
+DRAM:  128 MiB
+Relocation Offset is: 07eaa000
+Relocating to 07eaa000, new gd at 06ea75a0, sp at 06ea7590
+RABBIT HOLE v2 sberboom-mini [DEVICE_ID_REDACTED] [CHALLENGE_REDACTED]>
+RABBITH: timed out
+RABBIT HOLE LEVELS: none
