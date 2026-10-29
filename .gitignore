@@ -1,0 +1,21 @@
+# Never commit private/device or proprietary input and generated firmware.
+/work/
+/private/
+*.bin
+*.raw
+*.cpio
+*.zip
+*.whl
+*.exe
+*.dll
+*.pyd
+*.pem
+*.key
+*.crt
+*.db
+*.xml
+__pycache__/
+.venv/
+*.pyc
+.env
+*.token
