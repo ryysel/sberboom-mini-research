@@ -2,7 +2,7 @@
   "scope": "old third-party StarOS 1.82.7 dump, vendor/staros/box (ARM ELF32)",
   "elf_sha256": "b119359d11570e5be7489602dfb6124848ce44000abb8a5e076bd0e2b8d25c6a",
   "layout": "PASS",
-  "checks_count": 38,
+  "checks_count": 55,
   "checks": [
     {
       "label": "backend validator vtable slots",
@@ -310,6 +310,125 @@
       "label": "MutableConfigService registers with AgentService",
       "load_slot_0x18": "0x36ac38",
       "blx": "0x36ac70"
+    },
+    {
+      "label": "PIN validator reads token length at +4",
+      "address": "0x17f6c4",
+      "words": [
+        "0xe5913004"
+      ]
+    },
+    {
+      "label": "PIN validator compares token length to zero",
+      "address": "0x17f6c8",
+      "words": [
+        "0xe3530000"
+      ]
+    },
+    {
+      "label": "PIN validator returns result 4 for an empty token",
+      "address": "0x17f6f4",
+      "words": [
+        "0xe3a00004"
+      ]
+    },
+    {
+      "label": "backend validator reads token length at +4",
+      "address": "0x177b58",
+      "words": [
+        "0xe59c3004"
+      ]
+    },
+    {
+      "label": "backend validator compares token length to zero",
+      "address": "0x177b5c",
+      "words": [
+        "0xe3530000"
+      ]
+    },
+    {
+      "label": "backend validator returns result 4 for an empty token",
+      "address": "0x177b6c",
+      "words": [
+        "0xe3a00004"
+      ]
+    },
+    {
+      "label": "onStarMessage loads the token type field",
+      "address": "0x183f80",
+      "words": [
+        "0xe5954018"
+      ]
+    },
+    {
+      "label": "token type 0 selects the PIN validator",
+      "address": "0x183f88",
+      "words": [
+        "0xe3540000"
+      ]
+    },
+    {
+      "label": "token type 1 selects the backend validator",
+      "address": "0x183f90",
+      "words": [
+        "0xe3540001"
+      ]
+    },
+    {
+      "label": "onStarMessage compares validation result to zero",
+      "address": "0x1840a8",
+      "words": [
+        "0xe3540000"
+      ]
+    },
+    {
+      "label": "onStarMessage isolates results 1..3 for the error responder",
+      "address": "0x1840b0",
+      "words": [
+        "0xe2443001",
+        "0xe3530002"
+      ]
+    },
+    {
+      "label": "results other than 1..3 take the processing path",
+      "address": "0x1840b8",
+      "words": [
+        "0x8a000023"
+      ]
+    },
+    {
+      "label": "direct BL",
+      "address": "0x184158",
+      "target": "0x182cd8"
+    },
+    {
+      "label": "processing helper compares map lookup with end sentinel",
+      "address": "0x182d24",
+      "words": [
+        "0xe2863f45"
+      ]
+    },
+    {
+      "label": "processing helper checks the looked-up client state",
+      "address": "0x182d84",
+      "words": [
+        "0xe59d3044",
+        "0xe3530000"
+      ]
+    },
+    {
+      "label": "processing helper requires server state at +0x94",
+      "address": "0x182da8",
+      "words": [
+        "0xe3570000"
+      ]
+    },
+    {
+      "label": "unknown client skips processing",
+      "address": "0x183060",
+      "words": [
+        "0xa00003d"
+      ]
     },
     {
       "label": "KDF PLT symbols",
