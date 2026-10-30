@@ -1,0 +1,327 @@
+{
+  "scope": "old third-party StarOS 1.82.7 dump, vendor/staros/box (ARM ELF32)",
+  "elf_sha256": "b119359d11570e5be7489602dfb6124848ce44000abb8a5e076bd0e2b8d25c6a",
+  "layout": "PASS",
+  "checks_count": 38,
+  "checks": [
+    {
+      "label": "backend validator vtable slots",
+      "address": "0x711184",
+      "words": [
+        "0x177b2c",
+        "0x177b4c",
+        "0x177b74"
+      ]
+    },
+    {
+      "label": "PIN validator vtable slots",
+      "address": "0x7114cc",
+      "words": [
+        "0x17f6fc",
+        "0x17f700",
+        "0x17f6c4",
+        "0x17f718"
+      ]
+    },
+    {
+      "label": "nested parser object RTTI",
+      "vtable": "0x7235f8",
+      "type": "N2ru4sber6staros8protobuf11StarCommandE"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x184e8c",
+      "target": "0x24e5f0"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x185010",
+      "target": "0x183cb8"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x184f84",
+      "target": "0x184220"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x170e14",
+      "target": "0x4b0c48"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x171868",
+      "target": "0x4b0c48"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x170200",
+      "target": "0x560d84"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x128b84",
+      "target": "0x128848"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x128c08",
+      "target": "0x127d54"
+    },
+    {
+      "label": "token result 1 comparison",
+      "address": "0x170dbc",
+      "words": [
+        "0xe3530001"
+      ]
+    },
+    {
+      "label": "token result 2 comparison",
+      "address": "0x170fc4",
+      "words": [
+        "0xe3530002"
+      ]
+    },
+    {
+      "label": "token result 3 comparison",
+      "address": "0x170fe8",
+      "words": [
+        "0xe3530003"
+      ]
+    },
+    {
+      "label": "downstream virtual command dispatch slot 0x28",
+      "address": "0x171904",
+      "words": [
+        "0xe5903000",
+        "0xe5933028",
+        "0xe12fff33"
+      ]
+    },
+    {
+      "label": "config handler command case 100 at offset 0x10",
+      "address": "0x367b08",
+      "words": [
+        "0xe5943010",
+        "0xe3530064"
+      ]
+    },
+    {
+      "label": "ADB handler reads different StarMessage discriminator at offset 0x18",
+      "address": "0x128af4",
+      "words": [
+        "0xe5913018"
+      ]
+    },
+    {
+      "label": "ADB StarMessage case 115",
+      "address": "0x128afc",
+      "words": [
+        "0xe3530073"
+      ]
+    },
+    {
+      "label": "password KDF iteration count 1000",
+      "address": "0x1288d4",
+      "words": [
+        "0xe3a03ffa"
+      ]
+    },
+    {
+      "label": "direct BL",
+      "address": "0x1288e4",
+      "target": "0x49396c"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x4939c8",
+      "target": "0x280ec"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x4939e8",
+      "target": "0x25f5c"
+    },
+    {
+      "label": "password KDF output length 32 bytes",
+      "address": "0x493994",
+      "words": [
+        "0xe3a09020"
+      ]
+    },
+    {
+      "label": "Agent interface typeinfo",
+      "address": "0x719f38",
+      "name": "N6staros5AgentE",
+      "base": "N6staros13StateProviderE"
+    },
+    {
+      "label": "AgentServiceImpl vtable slots",
+      "vtable": "0x71956c",
+      "abstract_type": "N6staros12AgentServiceE",
+      "impl_type": "N6staros16AgentServiceImplE",
+      "slot_0x18_addAgent": "0x34f6c0",
+      "slot_0x28_processStarCommand": "0x350318"
+    },
+    {
+      "label": "processMessage dispatch through AgentService slot 0x28",
+      "address": "0x1718fc",
+      "words": [
+        "0xe595002c",
+        "0xe59d1010",
+        "0xe5903000",
+        "0xe5933028",
+        "0xe12fff33"
+      ]
+    },
+    {
+      "label": "agent invoker allowlist and dispatch",
+      "slot_0x14_supportedCommands": "0x34e980",
+      "slot_0x18_processStarCommand": "0x34e9c8"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x171840",
+      "target": "0x37b01c"
+    },
+    {
+      "label": "oneof accessor default error string",
+      "address": "0x63db72",
+      "string": "unexpected star command type"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x16a238",
+      "target": "0x17027c"
+    },
+    {
+      "label": "processor ctor stores AgentService* at +0x2c",
+      "address": "0x170370",
+      "words": [
+        "0xe584802c"
+      ]
+    },
+    {
+      "label": "seven Agent subobject vtables",
+      "agents": [
+        {
+          "class": "BrainServiceImpl",
+          "agent_offset": "0x6c",
+          "vtable": "0x710454",
+          "supportedCommands": "0x1492d4",
+          "processStarCommand": "0x1513e4"
+        },
+        {
+          "class": "StarOSBluetoothImpl",
+          "agent_offset": "0x50",
+          "vtable": "0x7149b0",
+          "supportedCommands": "0x2386b4",
+          "processStarCommand": "0x235bd8"
+        },
+        {
+          "class": "ReportServiceImpl",
+          "agent_offset": "0x74",
+          "vtable": "0x716dd4",
+          "supportedCommands": "0x2b045c",
+          "processStarCommand": "0x2ab3bc"
+        },
+        {
+          "class": "LedServiceImpl",
+          "agent_offset": "0x88",
+          "vtable": "0x7172b4",
+          "supportedCommands": "0x2ce7ac",
+          "processStarCommand": "0x2cb284"
+        },
+        {
+          "class": "EnvironmentServiceImpl",
+          "agent_offset": "0x94",
+          "vtable": "0x718690",
+          "supportedCommands": "0x316040",
+          "processStarCommand": "0x317c84"
+        },
+        {
+          "class": "VolumeServiceImpl",
+          "agent_offset": "0x0",
+          "vtable": "0x719430",
+          "supportedCommands": "0x34c3d8",
+          "processStarCommand": "0x34e254"
+        },
+        {
+          "class": "MutableConfigService",
+          "agent_offset": "0x42c",
+          "vtable": "0x719d98",
+          "supportedCommands": "0x369fd0",
+          "processStarCommand": "0x368280"
+        }
+      ]
+    },
+    {
+      "label": "Brain supportedCommands array",
+      "address": "0x5e9a28",
+      "words": [
+        "0x65",
+        "0x66",
+        "0xa",
+        "0x4",
+        "0x73",
+        "0x74",
+        "0x75",
+        "0x76",
+        "0x8d"
+      ]
+    },
+    {
+      "label": "Led supportedCommands array",
+      "address": "0x628800",
+      "words": [
+        "0x3",
+        "0x1",
+        "0x13",
+        "0x9",
+        "0x10",
+        "0x8",
+        "0x14",
+        "0x1b",
+        "0x16",
+        "0x22"
+      ]
+    },
+    {
+      "label": "Volume supportedCommands array",
+      "address": "0x638694",
+      "words": [
+        "0x6c",
+        "0x6d",
+        "0x6e",
+        "0x81"
+      ]
+    },
+    {
+      "label": "inline supported-command immediates",
+      "sites": [
+        "0x238598",
+        "0x23859c",
+        "0x2b0494",
+        "0x315f64",
+        "0x369ef4"
+      ]
+    },
+    {
+      "label": "MutableConfigService registers with AgentService",
+      "load_slot_0x18": "0x36ac38",
+      "blx": "0x36ac70"
+    },
+    {
+      "label": "KDF PLT symbols",
+      "EVP_sha256": "0x280ec",
+      "PKCS5_PBKDF2_HMAC": "0x25f5c"
+    }
+  ],
+  "limitations": "Checks exact bytes/pointers, not complete CFG, downstream authorization, live LAN reachability or current firmware",
+  "device_operations": "NONE",
+  "wrong_elf_rejected": true,
+  "validated_on": [
+    "Windows",
+    "Linux"
+  ]
+}

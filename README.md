@@ -4,7 +4,7 @@
 
 **Root/shell не получены. Это не инструкция разблокировки или прошивки.** Цель — предоставить воспроизводимые данные, чтобы другие исследователи могли проверить выводы и предложить следующий обоснованный шаг.
 
-> English summary: UART boot logs and offline firmware analysis for the first-generation SberBoom Mini. No shell or root obtained. The supplied third-party dump contains StarOS 1.82.7 from November 2022; the live device reports U-Boot built in April 2026. Bootloader UART Rabbit Hole v2 and the userspace StarOS JWT service must not be assumed to share a protocol. No firmware images, signing keys or device secrets are distributed here.
+> English summary: UART boot logs and offline firmware analysis for the first-generation SberBoom Mini. No shell or root obtained. The supplied third-party dump contains StarOS 1.82.7 from November 2022; the live device reports U-Boot built in April 2026. Bootloader UART Rabbit Hole v2 and the userspace StarOS JWT service must not be assumed to share a protocol. The SberCast star-command route is traced to a closed set of seven Agent implementations; ADB and arbitrary config writes are not reachable from it. No firmware images, signing keys or device secrets are distributed here.
 
 ## Главное
 
@@ -22,6 +22,7 @@
 | Целостность system в дампе | Все 5423 блока dm-verity, 43 нижних блока дерева и root hash совпали |
 | Shell/ADB в старом system | Код присутствует, запуск ограничен разрешениями из kernel cmdline |
 | StarOS JWT | Найден и статически прослежен код проверки RS256, device/product, session UUID и `adb_root` |
+| SberCast star-command | Прослежен до закрытого набора из семи Agent-классов; ADB и произвольная запись конфигурации этим путём недостижимы |
 | UART-алгоритм | Не восстановлен: открытый BL33 не получен; реализация `rabbith.h` не найдена |
 | USB-проверка | D+/D−/GND, без VBUS: новое USB-устройство не появилось. Причина не установлена |
 
@@ -31,6 +32,7 @@
 - [Платы, фотографии и электрическая безопасность](docs/HARDWARE.md)
 - [Анализ дампа и целостности](docs/ANALYSIS.md)
 - [JWT Rabbit Hole в StarOS](docs/RABBIT-HOLE.md)
+- [SberCast → StarCommand: маршрут и границы достижимости](docs/SBERCAST-ROUTING.md)
 - [UART Rabbit Hole / защищённый загрузочный контейнер](docs/UART-BOOTLOADER.md)
 - [Вопросы к сообществу](docs/OPEN-QUESTIONS.md)
 - [Источники и происхождение материалов](docs/SOURCES.md)
