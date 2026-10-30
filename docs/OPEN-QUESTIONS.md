@@ -21,6 +21,7 @@
 11. Верна ли реконструкция `AgentService::processStarCommand` и наборов `supportedCommands()` семи классов? Важны независимые проверки по адресам из [SBERCAST-ROUTING.md](SBERCAST-ROUTING.md).
 12. Что означает строка `session+0xac` и включён ли конфигурационный флаг `server+0x94` на реальной прошивке? Auth type gate не использует; реестр `server+0x110` — это активные WS-сессии, запись появляется уже при открытии соединения.
 13. Существует ли явное преобразование `StarCommand` → `StarMessage`, и какие условия включают AdbService в текущей прошивке?
+14. Кто аутентифицирует канал конфигурации, через который задаются `adb.enableAdbCommand`/`enableAdbSalt`/`enableAdbHash`, и может ли `CONFIG_OVERRIDE` прийти не от backend?
 
 ## Формат полезного ответа
 

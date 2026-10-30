@@ -2,7 +2,7 @@
   "scope": "old third-party StarOS 1.82.7 dump, vendor/staros/box (ARM ELF32)",
   "elf_sha256": "b119359d11570e5be7489602dfb6124848ce44000abb8a5e076bd0e2b8d25c6a",
   "layout": "PASS",
-  "checks_count": 69,
+  "checks_count": 77,
   "checks": [
     {
       "label": "backend validator vtable slots",
@@ -526,6 +526,58 @@
       "label": "direct BL",
       "address": "0x181f24",
       "target": "0x181dc0"
+    },
+    {
+      "label": "non-directive type 8 compares against 8",
+      "address": "0x171848",
+      "words": [
+        "0xe3530008"
+      ]
+    },
+    {
+      "label": "direct BL",
+      "address": "0x171868",
+      "target": "0x4b0c48"
+    },
+    {
+      "label": "direct BL",
+      "address": "0x17191c",
+      "target": "0x170824"
+    },
+    {
+      "label": "type 4 and other types converge before dispatch",
+      "address": "0x1718e8",
+      "words": [
+        "0xe3530004"
+      ]
+    },
+    {
+      "label": "password check loads the config provider at +0x80",
+      "address": "0x128858",
+      "words": [
+        "0xe5906080"
+      ]
+    },
+    {
+      "label": "onServiceConfig stores adbEnabled at +0xc9",
+      "address": "0x12837c",
+      "words": [
+        "0xe5c500c9"
+      ]
+    },
+    {
+      "label": "ADB config keys",
+      "keys": [
+        "adb",
+        "enableAdbCommand",
+        "enableAdbSalt",
+        "enableAdbHash"
+      ]
+    },
+    {
+      "label": "direct BL",
+      "address": "0x178470",
+      "target": "0x181e98"
     },
     {
       "label": "KDF PLT symbols",
