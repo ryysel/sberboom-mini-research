@@ -81,6 +81,7 @@ TP3 +12 В, TP4 UART RX, TP5 D+, TP6 D−**. TP2 — сигнальный вых
 | [docs/RABBIT-HOLE.md](docs/RABBIT-HOLE.md) | JWT-авторизация в StarOS и её связь с ADB |
 | [docs/SBERCAST-ROUTING.md](docs/SBERCAST-ROUTING.md) | star-command, семь Agent-классов, границы достижимости |
 | [docs/OPEN-QUESTIONS.md](docs/OPEN-QUESTIONS.md) | вопросы, на которые мы ищем ответы |
+| [docs/NEXT-STEPS.md](docs/NEXT-STEPS.md) | как получить текущую прошивку, USB и аппаратный доступ |
 | [docs/SOURCES.md](docs/SOURCES.md) | ссылки и происхождение материалов |
 | [evidence/](evidence/) | JSON/текст с хешами и результатами проверок |
 | [logs/](logs/) | обезличенный UART-лог |
