@@ -57,6 +57,7 @@
 - Прямой `StarCommand` (type8) идёт в тот же dispatch 0x1718fc через 0x171914/0x170824: отдельного обхода allowlist нет.
 - ADB читает `enableAdbSalt`/`enableAdbHash`/`enableAdbCommand` из секции `adb` конфиг-провайдера `+0x80`; `onServiceConfig` принимает только `adbEnabled`/`forceDisableAdb`. Запись этих полей — канал конфигурации, не star-command.
 - Канал конфигурации — device-pull: `/get_config` с `X-Service-Token` и `config_hash`; ответ сохраняется как `CONFIG_OVERRIDE`/`CONFIG_OVERRIDE_HASH`. `config_hash` — маркер изменения, не подпись; отдельной проверки тела конфига не найдено.
+- В `star.json` URL = `https://staros-api-md.devices.sberbank.ru`, локальный override = `/data/staros/localOverrideStar.json`; `adb.enableAdbCommand` указывает на `/vendor/staros/enable_adb.sh`, которого в образе нет. Значения salt/hash не публикуются.
 - Колонка, сеть и сервисы не затрагивались; новых подключений к 20000 не было.
 
 ## Где остановились

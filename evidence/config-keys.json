@@ -1,0 +1,17 @@
+{
+  "scope": "vendor/staros/star.json from the third-party StarOS 1.82.7 dump",
+  "note": "Non-secret configuration facts only. The adb password fields are present in the file but their values are deliberately not copied here.",
+  "backend": {
+    "updateAndConfigBackendUrl": "https://staros-api-md.devices.sberbank.ru",
+    "localOverridableConfig": "/data/staros/localOverrideStar.json",
+    "caCertsFile": "/vendor/staros/ca-certificates.crt",
+    "extraCaCertsFile": "/vendor/staros/ca-rus-digital-ministry.crt"
+  },
+  "adb": {
+    "enableAdbCommand": "/vendor/staros/enable_adb.sh",
+    "enableAdbSalt_present": true,
+    "enableAdbHash_present": true,
+    "values_published": false,
+    "command_present_in_image": false
+  }
+}
