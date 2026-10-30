@@ -56,6 +56,7 @@
 - Gate 0x182d84 auth type `+0xd0` не читает: он требует пустую строку `session+0xac` и ненулевой `server+0x94`. Поле `+0x94` — конфигурационное (подобъект `+0x8c`, инициализируется из аргумента конструктора); включено ли оно на реальной колонке, из ELF не следует.
 - Прямой `StarCommand` (type8) идёт в тот же dispatch 0x1718fc через 0x171914/0x170824: отдельного обхода allowlist нет.
 - ADB читает `enableAdbSalt`/`enableAdbHash`/`enableAdbCommand` из секции `adb` конфиг-провайдера `+0x80`; `onServiceConfig` принимает только `adbEnabled`/`forceDisableAdb`. Запись этих полей — канал конфигурации, не star-command.
+- Канал конфигурации — device-pull: `/get_config` с `X-Service-Token` и `config_hash`; ответ сохраняется как `CONFIG_OVERRIDE`/`CONFIG_OVERRIDE_HASH`. `config_hash` — маркер изменения, не подпись; отдельной проверки тела конфига не найдено.
 - Колонка, сеть и сервисы не затрагивались; новых подключений к 20000 не было.
 
 ## Где остановились
