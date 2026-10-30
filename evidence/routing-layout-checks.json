@@ -2,7 +2,7 @@
   "scope": "old third-party StarOS 1.82.7 dump, vendor/staros/box (ARM ELF32)",
   "elf_sha256": "b119359d11570e5be7489602dfb6124848ce44000abb8a5e076bd0e2b8d25c6a",
   "layout": "PASS",
-  "checks_count": 55,
+  "checks_count": 62,
   "checks": [
     {
       "label": "backend validator vtable slots",
@@ -428,6 +428,55 @@
       "address": "0x183060",
       "words": [
         "0xa00003d"
+      ]
+    },
+    {
+      "label": "wsOnOpenCallback tail-calls the session registrar",
+      "address": "0x183900",
+      "words": [
+        "0xeaffff21"
+      ]
+    },
+    {
+      "label": "new connection session starts with auth type 3",
+      "address": "0x185508",
+      "words": [
+        "0xe3a03003"
+      ]
+    },
+    {
+      "label": "constructor stores auth type at session+0xd0",
+      "address": "0x185514",
+      "words": [
+        "0xe58430d0"
+      ]
+    },
+    {
+      "label": "auth type setter writes session+0xd0",
+      "address": "0x1852d8",
+      "words": [
+        "0xe58010d0"
+      ]
+    },
+    {
+      "label": "auth type getter reads session+0xd0",
+      "address": "0x185108",
+      "words": [
+        "0xe59000d0"
+      ]
+    },
+    {
+      "label": "PIN path stamps auth type 1",
+      "address": "0x18406c",
+      "words": [
+        "0xe3a01001"
+      ]
+    },
+    {
+      "label": "backend path stamps auth type 0",
+      "address": "0x184094",
+      "words": [
+        "0xe3a01000"
       ]
     },
     {
