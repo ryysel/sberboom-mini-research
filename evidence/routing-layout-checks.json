@@ -2,7 +2,7 @@
   "scope": "old third-party StarOS 1.82.7 dump, vendor/staros/box (ARM ELF32)",
   "elf_sha256": "b119359d11570e5be7489602dfb6124848ce44000abb8a5e076bd0e2b8d25c6a",
   "layout": "PASS",
-  "checks_count": 67,
+  "checks_count": 69,
   "checks": [
     {
       "label": "backend validator vtable slots",
@@ -514,6 +514,18 @@
       "words": [
         "0xe5967094"
       ]
+    },
+    {
+      "label": "server init builds the subobject at +0x8c",
+      "address": "0x181f20",
+      "words": [
+        "0xe284008c"
+      ]
+    },
+    {
+      "label": "direct BL",
+      "address": "0x181f24",
+      "target": "0x181dc0"
     },
     {
       "label": "KDF PLT symbols",
